@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_login"
+    android:id="@+id/activity_signup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="eu.long1.spacetablayoutdemo.Login">
+    tools:context="eu.long1.spacetablayoutdemo.Signup">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -14,9 +14,9 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        app:cardElevation="24dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
+        android:layout_marginRight="15dp"
+        app:cardElevation="24dp">
 
         <LinearLayout
             android:orientation="vertical"
@@ -28,46 +28,43 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText2"
-                android:hint="Email"
+                android:id="@+id/editText7"
+                android:hint="Nama lengkap"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="20dp" />
+                android:layout_marginRight="30dp" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText4"
-                android:hint="Password"
-                android:inputType="textPassword"
+                android:id="@+id/editText6"
+                android:hint="Email aktif"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="5dp" />
+                android:layout_marginRight="30dp" />
 
-            <Button
-                android:text="Login"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/button"
-                android:onClick="login"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:hint="Nim"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="5dp" />
+                android:layout_marginRight="30dp" />
 
             <Button
-                android:text="Sign Up"
+                android:text="SignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button2"
+                android:id="@+id/button3"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginBottom="20dp"
-                android:onClick="signup" />
-
+                android:layout_marginBottom="20dp" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
-
 </RelativeLayout>
