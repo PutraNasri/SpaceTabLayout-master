@@ -23,12 +23,21 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alert"
+                android:textColor="#FFFC070B"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="30dp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText2"
+                android:id="@+id/emailT"
                 android:hint="Email"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
@@ -38,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:id="@+id/editText4"
+                android:id="@+id/passwordT"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:layout_marginLeft="30dp"
@@ -51,11 +60,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/button"
-                android:onClick="login"
+                android:id="@+id/button1"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:onClick="signin" />
 
             <Button
                 android:text="Sign Up"
